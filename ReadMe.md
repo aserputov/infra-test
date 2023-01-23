@@ -7,6 +7,6 @@ I have also added an ALB with target groups and listeners to redirect traffic fr
 
 Additionally, there are a few more rules that need to be added to the security groups and I plan to move back from using a public IP to get the ECR image to using a NAT gateway in a public subnet.
 
-- I do plan to update all the variable for vpc and subnets to be as a variables; and include .github/workflows/cd.yml -> to push images to ECR.
+- I do plan to update all the variable(+diagram) for vpc and subnets to be as a variables; and include .github/workflows/cd.yml -> to push images to ECR.
 
 Containers do work if we pass a public ip as a apiAddress env variable: http://<public_ip>:5000//WeatherForecast.
