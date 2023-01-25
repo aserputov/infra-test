@@ -1,3 +1,21 @@
+Updates \*
+
+As we discussed I did convert the existing Terraform template to Pulumi using the documentation and built-in API convert feature available at https://www.pulumi.com/tf2pulumi/.
+
+Process: I created a new Pulumi environment and decided to use C#, as our services are already built in this language. However, if necessary, I am also able to redo the process in Node.js.
+
+As a test run, I created a quick-example project using index.html and pulumi.aws.s3. Afterwards, I proceeded to convert the Terraform template step by step into Pulumi.
+
+In my experience, Pulumi feels similar in functionality to AWS CDK.
+
+Did access AWS credentials from the local AWS/config.
+
+I have also included a few pictures as examples in the repository.
+
+Please let me know if any further updates or redos are necessary.
+
+---
+
 After conducting a thorough review of the requirements and evaluating various options, I have determined that the best approach for this task would be to use ECS with Fargate.(out of ECS on ec2 or Beanstalk/EKS)
 This decision was made based on several factors, including the need for high availability and the need for an efficient means of scaling(complicated to scale containers on ec2 + scaling the ec2s.). Additionally, I decided to deploy them loosely coupled to have a better option to scale. Not scale them together as a service.
 
