@@ -1,5 +1,7 @@
 Updates \*
 
+---
+
 As we discussed I did convert the existing Terraform template to Pulumi using the documentation and built-in API convert feature available at https://www.pulumi.com/tf2pulumi/.
 
 Process: I created a new Pulumi environment and decided to use C#, as our services are already built in this language. However, if necessary, I am also able to redo the process in Node.js.
